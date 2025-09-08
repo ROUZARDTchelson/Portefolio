@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+:root {
+    --background-color: #019240;
+    --text-color: #030000;
+}
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+main{
+    flex: 1;
+    padding: 80px;
+}
+p {
+    line-height: 25px;
+}
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 15px 0;
+  margin: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+section{
+  background-color: #019240;
+  padding: 40px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  border-radius: 10px;
+}
+.section h2{
+    border: 5px solid red;
+}
+.competences-section h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #030000;
+}
+.competences-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+.competences-box {
+  background: white;
+  padding: 20px 30px;
+  border-radius: 10px;
+  width: 300px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+.competences-box h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.competences {
+  margin-bottom: 15px;
+}
+.competences span {
+  font-size: 14px;
+  font-weight: bold;
+}
+.bar {
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  height: 8px;
+  margin-top: 5px;
+  position: relative;
+  overflow: hidden;
+}
+.progress {
+  background-color: #00c4b4;
+  height: 100%;
+  border-radius: 5px;
+  transition: width 0.5s ease-in-out;
+}
+footer {
+  background-color: #f4f4fa;
+  font-size: 13px;
+  text-align: center;
+  padding: 5px 0;
+  color: #333;
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  
+}
+footer a{
+    color: #00c9c9;
+    text-decoration: none;
+}
+
+
+
+
