@@ -47,7 +47,7 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-  padding-top: 70px;
+    padding-top: 70px;
 }
 main{
     flex: 1;
@@ -64,11 +64,25 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+}
+@media (max-width: 768px) {
+    .A-propos {
+        flex-direction: column;
+        text-align: center;
+    }
+    .text-a-gauche, .photo-a-droite {
+        width: 100%;
+        margin: 0;
+    }
+    .text-a-gauche {
+        margin-bottom: 20px;
+    }
 }
 .text-a-gauche {
-width: 60%; 
-text-align: left;
-margin-right: 50px;
+    width: 60%; 
+    text-align: left;
+    margin-right: 50px;
     flex: 6%;
 }
 .text-a-gauche p1 {
@@ -108,6 +122,23 @@ footer {
   position: relative;
   bottom: 0;
   
+}
+button {
+    margin-top: 80px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+.text-a-gauche button {
+    position: relative;
+    color: inherit;
+    isolation: isolate;
+    text-decoration: none;
+    font-weight: bold;
+}
+.text-a-gauche button:hover {
+    background-color: #017a32;
+    transform: scale(1.05);
 }
 footer a{
     color: #00c9c9;
